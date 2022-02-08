@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConferenceManagementPortal", "ConferenceManagementPortal\ConferenceManagementPortal.csproj", "{42E07BE1-A4C2-42BD-B99D-D3BEFECA95AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42E07BE1-A4C2-42BD-B99D-D3BEFECA95AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E07BE1-A4C2-42BD-B99D-D3BEFECA95AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E07BE1-A4C2-42BD-B99D-D3BEFECA95AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E07BE1-A4C2-42BD-B99D-D3BEFECA95AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32C56B0B-3FE4-4485-A0CB-DEAD935967B4}
+	EndGlobalSection
+EndGlobal
