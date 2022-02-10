@@ -1,23 +1,19 @@
-﻿.footerlinks {
-    color: #ffffff;
-    text-decoration: none !important;
-}
-
-    .footerlinks:hover {
-        color: #ffd800;
-    }
-
+﻿
 #footer1 {
-    background: #762b00;
-}
+    background: #e0dbd8;
+    position:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
-#footer2 {
-    background: #531f00;
 }
 
 .badged {
     color: #ffffff;
-    background-color: #17a2b8;
+    background-color: #2dd817;
     padding: 1px 9px 2px;
     font-size: 12.025px;
     font-weight: bold;
@@ -49,4 +45,12 @@
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
     border-radius: 9px;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+   
+    padding: 10px;
 }

@@ -5,15 +5,76 @@
 <html>
 <head runat="server">
     <title></title>
+   
+    <%-- bootstrap --%>
+    <link href="bootsrap/css/bootstrap.min.css" rel="stylesheet" />
+     <%-- datatables --%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+     <%-- fontawesome --%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    
+    <link href="css/customstylesheet.css" rel="stylesheet" />
+
+
+     <%-- jquery --%>
+   <%--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>--%>
+    <script src="bootsrap/js/jquery.slim.min.js"></script>
+     <%-- popper.js --%>
+    <script src="bootsrap/js/popper.min.js"></script>
+
+     <%-- bootstrap js--%>
+    <script src="bootsrap/js/bootstrap.min.js"></script>
+
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
+
+        
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/iitrlogo1.png" width="30" height="30" />
+                    CMP
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="homepage.aspx">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="usersignup.aspx">SignUp</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="userlogin.aspx">Login</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="uploadedpapers.aspx">Papers</a>
+                        </li>
+
+                    </ul>
+
+                  
+                </div>
+
+
+            </nav>
+        </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+
+
+
     </form>
 </body>
 </html>
