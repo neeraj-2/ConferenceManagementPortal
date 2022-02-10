@@ -1,19 +1,32 @@
-﻿
-#footer1 {
-    background: #e0dbd8;
-    position:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+﻿.footerlinks {
+    color: #051f38;
+    text-decoration: none !important;
+}
 
+    .footerlinks:hover {
+        color: #1403fa;
+    }
+
+#footer1 {
+    color: #dbe1e9;
+    background: #ecececec;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+#footer2 {
+    background: rgba(221, 221, 221, 0.322);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
 }
 
 .badged {
     color: #ffffff;
-    background-color: #2dd817;
+    background-color: #17a2b8;
     padding: 1px 9px 2px;
     font-size: 12.025px;
     font-weight: bold;
@@ -45,12 +58,4 @@
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
     border-radius: 9px;
-}
-
-.center {
-    text-align: center;
-    margin: auto;
-    width: 50%;
-   
-    padding: 10px;
 }

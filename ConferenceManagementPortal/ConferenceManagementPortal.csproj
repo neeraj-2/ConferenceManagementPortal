@@ -73,6 +73,10 @@
     <Content Include="usersignup.aspx" />
     <Content Include="userlogin.aspx" />
     <Content Include="uploadedpapers.aspx" />
+    <Content Include="adminlogin.aspx" />
+    <Content Include="userprofile.aspx" />
+    <Content Include="adminmembermanagement.aspx" />
+    <Content Include="uploadpage.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -117,6 +121,34 @@
     </Compile>
     <Compile Include="uploadedpapers.aspx.designer.cs">
       <DependentUpon>uploadedpapers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.aspx.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminlogin.aspx.designer.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userprofile.aspx.cs">
+      <DependentUpon>userprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userprofile.aspx.designer.cs">
+      <DependentUpon>userprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminmembermanagement.aspx.cs">
+      <DependentUpon>adminmembermanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminmembermanagement.aspx.designer.cs">
+      <DependentUpon>adminmembermanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uploadpage.aspx.cs">
+      <DependentUpon>uploadpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uploadpage.aspx.designer.cs">
+      <DependentUpon>uploadpage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
