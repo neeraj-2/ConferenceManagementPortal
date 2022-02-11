@@ -25,6 +25,9 @@ namespace ConferenceManagementPortal
                   
                     LinkButton10.Visible = false;
 
+                    LinkButton5.Visible = false; //upload paper
+                    LinkButton8.Visible = false; //edit-uploads
+
 
 
                 }
@@ -44,6 +47,9 @@ namespace ConferenceManagementPortal
                    
                     LinkButton10.Visible = false;
 
+                     LinkButton5.Visible = true; //upload paper
+                    LinkButton8.Visible = true; //edit-uploads
+
                 }
                 else if (Session["role"] == "admin")
                 {
@@ -57,6 +63,8 @@ namespace ConferenceManagementPortal
                     LinkButton6.Visible = false; //admin login
                 
                     LinkButton10.Visible = true;
+                     LinkButton5.Visible = true; //upload paper
+                    LinkButton8.Visible = true; //edit-uploads
 
                 }
             }
@@ -78,12 +86,12 @@ namespace ConferenceManagementPortal
 
         protected void LinkButton8_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/edituploads.aspx");
         }
 
-        protected void LinkButton9_Click(object sender, EventArgs e)
+        protected void LinkButton5_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("~/uploadgallery.aspx");
         }
 
         protected void LinkButton10_Click(object sender, EventArgs e)

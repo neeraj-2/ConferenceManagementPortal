@@ -72,11 +72,12 @@
     <Content Include="homepage.aspx" />
     <Content Include="usersignup.aspx" />
     <Content Include="userlogin.aspx" />
-    <Content Include="uploadedpapers.aspx" />
     <Content Include="adminlogin.aspx" />
     <Content Include="userprofile.aspx" />
     <Content Include="adminmembermanagement.aspx" />
-    <Content Include="uploadpage.aspx" />
+    <Content Include="uploadgallery.aspx" />
+    <Content Include="edituploads.aspx" />
+    <Content Include="uploadedpapers.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -115,13 +116,6 @@
     <Compile Include="userlogin.aspx.designer.cs">
       <DependentUpon>userlogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="uploadedpapers.aspx.cs">
-      <DependentUpon>uploadedpapers.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="uploadedpapers.aspx.designer.cs">
-      <DependentUpon>uploadedpapers.aspx</DependentUpon>
-    </Compile>
     <Compile Include="adminlogin.aspx.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -143,12 +137,26 @@
     <Compile Include="adminmembermanagement.aspx.designer.cs">
       <DependentUpon>adminmembermanagement.aspx</DependentUpon>
     </Compile>
-    <Compile Include="uploadpage.aspx.cs">
-      <DependentUpon>uploadpage.aspx</DependentUpon>
+    <Compile Include="uploadgallery.aspx.cs">
+      <DependentUpon>uploadgallery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="uploadpage.aspx.designer.cs">
-      <DependentUpon>uploadpage.aspx</DependentUpon>
+    <Compile Include="uploadgallery.aspx.designer.cs">
+      <DependentUpon>uploadgallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edituploads.aspx.cs">
+      <DependentUpon>edituploads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edituploads.aspx.designer.cs">
+      <DependentUpon>edituploads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uploadedpapers.aspx.cs">
+      <DependentUpon>uploadedpapers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uploadedpapers.aspx.designer.cs">
+      <DependentUpon>uploadedpapers.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

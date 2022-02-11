@@ -11,7 +11,7 @@ namespace ConferenceManagementPortal
 {
 
 
-    public partial class WebForm9
+    public partial class WebForm5
     {
     }
 }
