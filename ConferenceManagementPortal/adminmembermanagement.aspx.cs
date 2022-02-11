@@ -95,6 +95,12 @@ namespace ConferenceManagementPortal
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Session["role"]=="" || Session["role"]=="user")
+            {
+                Response.Write("<script>alert('You are not authorized to visit this page. Sorry. But First become admin then try to manage members!')</script>");
+                Response.Redirect("~/homepage.aspx");
+            }
+
              GridView1.DataBind();
         }
 
