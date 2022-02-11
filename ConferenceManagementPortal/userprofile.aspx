@@ -172,7 +172,7 @@
                      <div class="col">
                         <center>
                            <h4>Your Presented Papers</h4>
-                           <asp:Label class="badge badge-pill badge-info" ID="Label2" runat="server" Text="your books info"></asp:Label>
+                           <asp:Label class="badge badge-pill badge-info" ID="Label2" runat="server" Text="your info"></asp:Label>
                         </center>
                      </div>
                   </div>
