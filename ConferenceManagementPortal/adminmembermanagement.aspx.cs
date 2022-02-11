@@ -98,7 +98,7 @@ namespace ConferenceManagementPortal
              GridView1.DataBind();
         }
 
-        protected void Button2_Click1(object sender, EventArgs e)
+        protected void Button2_Click(object sender, EventArgs e)
         {
             if (memberExists())
             {
@@ -196,6 +196,7 @@ namespace ConferenceManagementPortal
             changeStatus("pending");
             GridView1.DataBind();
         }
-       
+
+      
     }
 }
