@@ -4,6 +4,7 @@
 		$(document).ready(function() {
 			$('.table').prepend($("<thead></thead").append($(this).find("tr:first"))).dataTable();
 		});
+        </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container-fluid">
