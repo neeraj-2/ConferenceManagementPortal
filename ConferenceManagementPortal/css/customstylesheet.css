@@ -7,21 +7,15 @@
         color: #1403fa;
     }
 
-#footer1 {
-    color: #dbe1e9;
-    background: #ecececec;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-}
+
 
 #footer2 {
     background: rgba(221, 221, 221, 0.322);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
+    position: fixed;
+    margin-top: auto;
+    
+   
+   
 }
 
 .badged {
