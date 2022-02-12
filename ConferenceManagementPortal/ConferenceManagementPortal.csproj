@@ -78,6 +78,7 @@
     <Content Include="uploadgallery.aspx" />
     <Content Include="edituploads.aspx" />
     <Content Include="uploadedpapers.aspx" />
+    <Content Include="WebForm11.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -157,6 +158,13 @@
     </Compile>
     <Compile Include="uploadedpapers.aspx.designer.cs">
       <DependentUpon>uploadedpapers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm11.aspx.cs">
+      <DependentUpon>WebForm11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm11.aspx.designer.cs">
+      <DependentUpon>WebForm11.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
