@@ -1,13 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="edituploads.aspx.cs" Inherits="ConferenceManagementPortal.WebForm10" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script type="text/javascript">
+	<script type="text/javascript">
 		$(document).ready(function() {
 			$('.table').prepend($("<thead></thead").append($(this).find("tr:first"))).dataTable();
 		});
 	</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container-fluid">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-5">
 				<div class="card">
@@ -115,12 +115,13 @@
 										<asp:BoundField DataField="title" HeaderText="Title" SortExpression="title" />
 										<asp:BoundField DataField="category" HeaderText="Category" SortExpression="category" />
 										<asp:BoundField DataField="description" HeaderText="Description" SortExpression="description" />
+										<asp:BoundField DataField="ContentType" HeaderText="Type" SortExpression="ContentType" />
 
 										<asp:BoundField DataField="upload_date" HeaderText="Uploaded on" InsertVisible="False" SortExpression="upload_date" />
 
 
 
-										<asp:TemplateField ItemStyle-HorizontalAlign="Center" HeaderText="Download Paper">
+										<asp:TemplateField ItemStyle-HorizontalAlign="Center" HeaderText="Download">
 											<ItemTemplate>
 												<asp:LinkButton ID="lnkDownload" runat="server" Text="Download" OnClick="DownloadFile" CommandArgument='<%# Eval("book_id") %>'></asp:LinkButton>
 											</ItemTemplate>
