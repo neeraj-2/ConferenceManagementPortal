@@ -72,7 +72,7 @@ namespace ConferenceManagementPortal
                     
                     using (SqlConnection con = new SqlConnection(strcon))
                     {
-                        string query = "insert into uploaded_files_tbl values (@Data, @member_id,@title,@category,@description,@Name, @ContentType,@member_name)";
+                        string query = "insert into uploaded_files_tbl values (@Data, @member_id,@title,@category,@description,@Name, @ContentType,@member_name,@upload_date)";
                         using (SqlCommand cmd = new SqlCommand(query))
                         {
                             cmd.Connection = con;
@@ -85,6 +85,9 @@ namespace ConferenceManagementPortal
                             cmd.Parameters.AddWithValue("@Name", filename);
                             cmd.Parameters.AddWithValue("@ContentType", contentType);
                             cmd.Parameters.AddWithValue("@member_name", TextBox4.Text.Trim());
+                            //only date
+                            cmd.Parameters.AddWithValue("@upload_date", DateTime.Now.ToString("yyyy-MM-dd"));
+                           
                            
                             con.Open();
                             cmd.ExecuteNonQuery();
