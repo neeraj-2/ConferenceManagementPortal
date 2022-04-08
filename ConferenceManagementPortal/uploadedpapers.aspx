@@ -75,7 +75,7 @@
 											</asp:TemplateField>
 											<asp:TemplateField ItemStyle-HorizontalAlign="Center" HeaderText="Download">
 												<ItemTemplate>
-													<asp:Label ID="Label13" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="Smaller" Text='<%# Eval("ContentType") %>'></asp:Label>
+													<asp:Label ID="Label14" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="Smaller" Text='<%# Eval("ContentType") %>'></asp:Label>
 													<asp:LinkButton ID="lnkDownload" runat="server" Text="Download" OnClick="DownloadFile" CommandArgument='<%# Eval("book_id") %>'></asp:LinkButton>
 												</ItemTemplate>
 											</asp:TemplateField>
@@ -88,7 +88,7 @@
 				</div>
 			</div>
 			<center>
-				<a href="home.aspx">
+				<a href="homepage.aspx">
 					<< Back to Home</a><span class="clearfix"></span>
 						<br />
 						<center>
