@@ -12,7 +12,7 @@ Mentor: Dr. Gaurav Harit
 
 It is common for Ph.D. students to present their thesis at Senate meetings at IITJ. Now, these students can present their work in any format they choose, such as ppt or videos. Keeping the track of all these documents is cumbersome. With the aim of making this process easier, I designed a platform that allows administrators to access all these documents in one place and other students to view them easily. 
 Thus, this project is aimed to develop a conference management portal for students at IITJ to upload their presentations in any format they select, including video, pdf, poster, ppt, etc., and other students or staff members can review them. 
-A specific student will be allowed to upload their work based on authenticity by the admin.
+A specific student will be authorized to upload their work based on authenticity by the admin.
 
 
 ## Tech Stack
