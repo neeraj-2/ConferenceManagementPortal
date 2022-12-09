@@ -1,4 +1,5 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -43,6 +44,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -69,6 +76,15 @@
   <ItemGroup>
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
+    <Content Include="homepage.aspx" />
+    <Content Include="usersignup.aspx" />
+    <Content Include="userlogin.aspx" />
+    <Content Include="adminlogin.aspx" />
+    <Content Include="userprofile.aspx" />
+    <Content Include="adminmembermanagement.aspx" />
+    <Content Include="uploadgallery.aspx" />
+    <Content Include="edituploads.aspx" />
+    <Content Include="uploadedpapers.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,10 +102,74 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usersignup.aspx.cs">
+      <DependentUpon>usersignup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usersignup.aspx.designer.cs">
+      <DependentUpon>usersignup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userlogin.aspx.cs">
+      <DependentUpon>userlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userlogin.aspx.designer.cs">
+      <DependentUpon>userlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.aspx.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminlogin.aspx.designer.cs">
+      <DependentUpon>adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userprofile.aspx.cs">
+      <DependentUpon>userprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userprofile.aspx.designer.cs">
+      <DependentUpon>userprofile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminmembermanagement.aspx.cs">
+      <DependentUpon>adminmembermanagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminmembermanagement.aspx.designer.cs">
+      <DependentUpon>adminmembermanagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uploadgallery.aspx.cs">
+      <DependentUpon>uploadgallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uploadgallery.aspx.designer.cs">
+      <DependentUpon>uploadgallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edituploads.aspx.cs">
+      <DependentUpon>edituploads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edituploads.aspx.designer.cs">
+      <DependentUpon>edituploads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uploadedpapers.aspx.cs">
+      <DependentUpon>uploadedpapers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uploadedpapers.aspx.designer.cs">
+      <DependentUpon>uploadedpapers.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Site.Master" />
+    <None Include="Properties\PublishProfiles\ConferenceManagementPortal20220408155046 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -97,6 +177,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -127,7 +208,10 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
   </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
