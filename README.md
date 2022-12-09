@@ -1,33 +1,38 @@
-# Conference Management Portal
- This is our Design Credit project for this semester.
-
-## Installation using docker(recommended)
-
-1. Clone the repo `$ git clone https://github.com/laur1s/PHP-Registration-Form.git`
-2. Run `docker-compose up -d` This will fetch PHP and MySQL Docker images, launch apache on http://localhost:8080 and MySQL on port 3306
-3. If you want to stop the service just run `docker-compose down`
- 
-# Here are the deliverables we are targeting to complete:
- 
-1. Login based access to the portal.
-2. Users who would be presenting a paper at the conference can upload PDF files, jpg files and video files.
-3. Other users who are attending the conference will be able to visit the pages corresponding to each paper and view the uploaded files.
-4. There will be an admin login who can give privileges to various users (for example, if and what kind of files they are allowed to upload).
+# CMI: A Conference Management Portal for students at IITJ
 
 
-## Mentor
 
-[Dr. Gaurav Harit](mailto:gharit@iitj.ac.in)
+Mentor: Dr. Gaurav Harit
 
-## Team
+> "क्या पूराने पीएचडी छात्रों के थीसिस देख सकते हैं"
+>                                  -Junior Batch Student
+
+
+## Description
+
+It is common for Ph.D. students to present their thesis at Senate meetings at IITJ. Now, these students can present their work in any format they choose, such as ppt or videos. Keeping the track of all these documents is cumbersome. With the aim of making this process easier, I designed a platform that allows administrators to access all these documents in one place and other students to view them easily. 
+Thus, this project is aimed to develop a conference management portal for students at IITJ to upload their presentations in any format they select, including video, pdf, poster, ppt, etc., and other students or staff members can review them. 
+A specific student will be allowed to upload their work based on authenticity by the admin.
+
+
+## Tech Stack
+
+> Backend: `C#`
+
+> Database: `MSSQL`
+
+> Frontend: `Asp.Net`,`HTML`, `CSS`, `Bootstrap`
+
+> Hosting: `Azure`(Will be Deployed)
+
+## Student
 
 | Name                                               | Year      | Department                       |
 | -------------------------------------------------- | --------- | -------------------------------- |
-| [Neeraj](https://github.com/neeraj-2)              |Junior| Computer Science and Engineering |
-| [Tanuj Bhardwaj](https://github.com/tanuj0110) | Junior | Electrical Engineering           |
-| [Manav Kapoor](https://github.com/manav1403)    | Junior|Electrical Engineering  |
+| [Neeraj](https://github.com/neeraj-2)              |Senior| Computer Science and Engineering |
 
 
-Raw Wireframe design for the application is here:
+### Video Demo Link:
 
-[Click to Open](https://whimsical.com/designcreditproject-DHjnqHa7hi9H5Z8c12vxr1)
+
+[Click Here](https://www.loom.com/share/1dedbcec79504917a74cf21e415834df)
